@@ -43,11 +43,18 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "TemperCalc - Software Para Calculos de Vidros Temperados"))
         self.menuArquivo.setTitle(_translate("MainWindow", "Arquivo"))
         self.menuOr_amento.setTitle(_translate("MainWindow", "Orçamento"))
         self.actionSair.setText(_translate("MainWindow", "Sair"))
-        self.actionFixos.setText(_translate("MainWindow", "Fixos"))
+        self.actionFixos.setText(_translate("MainWindow", "Vidros Fixos"))
 
 
-
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

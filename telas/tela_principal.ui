@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>TemperCalc - Software Para Calculos de Vidros Temperados</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -33,7 +33,7 @@
     <property name="title">
      <string>Orçamento</string>
     </property>
-    <addaction name="actionFIXOS"/>
+    <addaction name="actionFixos"/>
    </widget>
    <addaction name="menuArquivo"/>
    <addaction name="menuOr_amento"/>
@@ -44,9 +44,9 @@
     <string>Sair</string>
    </property>
   </action>
-  <action name="actionFIXOS">
+  <action name="actionFixos">
    <property name="text">
-    <string>FIXOS</string>
+    <string>Vidros Fixos</string>
    </property>
   </action>
  </widget>

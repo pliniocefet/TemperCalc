@@ -85,6 +85,10 @@ class Ui_Tela_fixo(object):
 "    font-size: 22px;\n"
 "    font-weight: bold;\n"
 "}")
+        self.label_valor_total_unitario.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.label_valor_total_unitario.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label_valor_total_unitario.setLineWidth(1)
+        self.label_valor_total_unitario.setIndent(-1)
         self.label_valor_total_unitario.setObjectName("label_valor_total_unitario")
         self.label_valor_total_geral = QtWidgets.QLabel(self.groupBox_fixos)
         self.label_valor_total_geral.setGeometry(QtCore.QRect(340, 153, 91, 21))
@@ -93,6 +97,7 @@ class Ui_Tela_fixo(object):
 "    font-size: 22px;\n"
 "    font-weight: bold;\n"
 "}")
+        self.label_valor_total_geral.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.label_valor_total_geral.setObjectName("label_valor_total_geral")
         Tela_fixo.setCentralWidget(self.centralwidget)
 
@@ -108,8 +113,8 @@ class Ui_Tela_fixo(object):
 
     def retranslateUi(self, Tela_fixo):
         _translate = QtCore.QCoreApplication.translate
-        Tela_fixo.setWindowTitle(_translate("Tela_fixo", "MainWindow"))
-        self.groupBox_fixos.setTitle(_translate("Tela_fixo", "Fixos"))
+        Tela_fixo.setWindowTitle(_translate("Tela_fixo", "Vidro Fixo"))
+        self.groupBox_fixos.setTitle(_translate("Tela_fixo", "Vidro Fixo"))
         self.label_largura.setText(_translate("Tela_fixo", "Largura"))
         self.label_altura.setText(_translate("Tela_fixo", "Altura"))
         self.comboBox_espessura.setPlaceholderText(_translate("Tela_fixo", "Espessura"))
@@ -129,13 +134,3 @@ class Ui_Tela_fixo(object):
         self.label_cifra_geral.setText(_translate("Tela_fixo", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; color:#ff0000;\">R$</span></p></body></html>"))
         self.label_valor_total_unitario.setText(_translate("Tela_fixo", "0000,00"))
         self.label_valor_total_geral.setText(_translate("Tela_fixo", "0000,00"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Tela_fixo = QtWidgets.QMainWindow()
-    ui = Ui_Tela_fixo()
-    ui.setupUi(Tela_fixo)
-    Tela_fixo.show()
-    sys.exit(app.exec_())
