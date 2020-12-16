@@ -35,8 +35,17 @@
     </property>
     <addaction name="actionFixos"/>
    </widget>
+   <widget class="QMenu" name="menuCadastro">
+    <property name="title">
+     <string>Cadastro</string>
+    </property>
+    <addaction name="actionCadastro_de_vidros"/>
+    <addaction name="actionCadastro_de_Alum_nios"/>
+    <addaction name="actionCadastro_de_Acess_rios"/>
+   </widget>
    <addaction name="menuArquivo"/>
    <addaction name="menuOr_amento"/>
+   <addaction name="menuCadastro"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionSair">
@@ -47,6 +56,21 @@
   <action name="actionFixos">
    <property name="text">
     <string>Vidros Fixos</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_vidros">
+   <property name="text">
+    <string>Cadastro de Vidros</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Alum_nios">
+   <property name="text">
+    <string>Cadastro de Alumínios</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Acess_rios">
+   <property name="text">
+    <string>Cadastro de Acessórios</string>
    </property>
   </action>
  </widget>
