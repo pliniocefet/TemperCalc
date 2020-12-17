@@ -29,13 +29,27 @@ class TelaFixo(QMainWindow):
 
 	### BOTÃO CALCULAR ###
 	def event_bt_calcular(self):
-		largura = int(self.tela_fixo.lineEdit_largura.text())
-		altura = int(self.tela_fixo.lineEdit_altura.text())
-		quantidade = int(self.tela_fixo.lineEdit_quantidade.text())
-		margem = float(self.tela_fixo.lineEdit_margem.text())
 
-		valor_total = self.aluminio.calcular_fixo_total_geral(largura, altura, quantidade, margem)
-		valor_unitario = self.aluminio.calcular_fixo_total_unitario(largura, altura, margem)
+		### TODO
+		### FAZER LOGICA PARA QUANDO CLICAR NO BOTÃO CALCULAR E OS CAMPOS ESTIVEREM VAZIOS
+		### APARECER POPUP OU DEIXAR CAMPOS VAZIOS EM VERMELHO
+		largura = None
+		altura = None
+		quantidade = None
+		margem = None
+		valor_unitario = None
+		valor_total = None
+
+		try:
+			largura = int(self.tela_fixo.lineEdit_largura.text())
+			altura = int(self.tela_fixo.lineEdit_altura.text())
+			quantidade = int(self.tela_fixo.lineEdit_quantidade.text())
+			margem = int(self.tela_fixo.lineEdit_margem.text())
+		except ValueError:
+			print('Campos com valores incorretos!')
+		else:
+			valor_total = self.aluminio.calcular_fixo_total_geral(largura, altura, quantidade, margem)
+			valor_unitario = self.aluminio.calcular_fixo_total_unitario(largura, altura, margem)
 
 		self.tela_fixo.label_valor_total_unitario.setText(str(valor_unitario))
 		self.tela_fixo.label_valor_total_geral.setText(str(valor_total))

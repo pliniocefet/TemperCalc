@@ -7,6 +7,7 @@ class PerfilAluminio():
 		self.PRECO_ALUMINIO = 27.70
 
 	def calcular_fixo_total_geral(self, largura, altura, quantidade, margem):
+
 		total_vidro = ((largura / 1000) * (altura / 1000)) * self.PRECO_VIDRO
 		total_aluminio = (((largura / 1000) + (altura / 1000)) * 2) * self.PRECO_ALUMINIO
 		total_unitario = ((total_aluminio + total_vidro) * (margem / 100)) + (total_aluminio + total_vidro)

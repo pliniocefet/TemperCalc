@@ -35,7 +35,7 @@ class TelaPrincipal(QMainWindow):
 
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    principal = TelaPrincipal()
-    principal.show()
-    sys.exit(app.exec_())
+	app = QApplication(sys.argv)
+	principal = TelaPrincipal()
+	principal.show()
+	sys.exit(app.exec_())
