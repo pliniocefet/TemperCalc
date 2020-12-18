@@ -22,7 +22,7 @@ class TelaPrincipal(QMainWindow):
 		### AÇÃO ###
 		# Menu Orçamento -> Fixos
 		# Chama a tela para orçamento de fixos
-		self.ui.actionFixos.triggered.connect(self.event_menu_fixo)
+		self.ui.actionVidros_Fixos.triggered.connect(self.event_menu_fixo)
 
 
 	@QtCore.pyqtSlot()

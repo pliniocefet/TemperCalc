@@ -29,22 +29,22 @@
     </property>
     <addaction name="actionSair"/>
    </widget>
-   <widget class="QMenu" name="menuOr_amento">
+   <widget class="QMenu" name="menuOrcamento">
     <property name="title">
      <string>Orçamento</string>
     </property>
-    <addaction name="actionFixos"/>
+    <addaction name="actionVidros_Fixos"/>
    </widget>
    <widget class="QMenu" name="menuCadastro">
     <property name="title">
      <string>Cadastro</string>
     </property>
     <addaction name="actionCadastro_de_vidros"/>
-    <addaction name="actionCadastro_de_Alum_nios"/>
-    <addaction name="actionCadastro_de_Acess_rios"/>
+    <addaction name="actionCadastro_de_Aluminios"/>
+    <addaction name="actionCadastro_de_Acessorios"/>
    </widget>
    <addaction name="menuArquivo"/>
-   <addaction name="menuOr_amento"/>
+   <addaction name="menuOrcamento"/>
    <addaction name="menuCadastro"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -53,24 +53,34 @@
     <string>Sair</string>
    </property>
   </action>
-  <action name="actionFixos">
-   <property name="text">
-    <string>Vidros Fixos</string>
-   </property>
-  </action>
   <action name="actionCadastro_de_vidros">
    <property name="text">
     <string>Cadastro de Vidros</string>
    </property>
   </action>
-  <action name="actionCadastro_de_Alum_nios">
+  <action name="actionCadastro_de_Aluminios">
    <property name="text">
     <string>Cadastro de Alumínios</string>
    </property>
   </action>
-  <action name="actionCadastro_de_Acess_rios">
+  <action name="actionCadastro_de_Acessorios">
    <property name="text">
     <string>Cadastro de Acessórios</string>
+   </property>
+  </action>
+  <action name="action08mm">
+   <property name="text">
+    <string>08mm</string>
+   </property>
+  </action>
+  <action name="action10mm">
+   <property name="text">
+    <string>10mm</string>
+   </property>
+  </action>
+  <action name="actionVidros_Fixos">
+   <property name="text">
+    <string>Vidros Fixos</string>
    </property>
   </action>
  </widget>

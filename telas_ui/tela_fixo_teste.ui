@@ -345,6 +345,16 @@
      <property name="placeholderText">
       <string>Espessura</string>
      </property>
+     <item>
+      <property name="text">
+       <string>08mm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10mm</string>
+      </property>
+     </item>
     </widget>
    </widget>
   </widget>

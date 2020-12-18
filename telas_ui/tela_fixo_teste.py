@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'tela_fixo.ui'
+# Form implementation generated from reading ui file 'tela_fixo_teste.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -141,3 +141,12 @@ class Ui_Tela_fixo(object):
         self.comboBox_espessura.setItemText(0, _translate("Tela_fixo", "08mm"))
         self.comboBox_espessura.setItemText(1, _translate("Tela_fixo", "10mm"))
 
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Tela_fixo = QtWidgets.QMainWindow()
+    ui = Ui_Tela_fixo()
+    ui.setupUi(Tela_fixo)
+    Tela_fixo.show()
+    sys.exit(app.exec_())
